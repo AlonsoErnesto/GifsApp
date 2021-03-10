@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let item of resultado" class="col-md-4">
+      <div class="card ">
+        <div class="card-body animate__animated animate__fadeIn animate_faster" >
+          <img [src]="item.images.downsized_medium.url" width="300" height="300" [alt]="item.title">
+          <span> <kbd>{{item.title }}</kbd> </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
